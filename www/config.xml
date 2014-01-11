@@ -15,6 +15,7 @@
     <access origin="*" />
     <!-- added by me -->
     <preference name="permissions" value="none"/>
+    <preference name="DisallowOverscroll" value="true" />
     <!--<gap:platform name="android" />-->
     <!---->
     
