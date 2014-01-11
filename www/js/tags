@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Patrick Walton	/pwalton@mozilla.com/
+!_TAG_PROGRAM_NAME	jsctags	//
+!_TAG_PROGRAM_URL	http://github.com/pcwalton/jsctags	/GitHub repository/
+!_TAG_PROGRAM_VERSION	0.1	//
+%anonymous_function	index.js	/^var obj = (function(){\r$/;"	f	lineno:1	type:void function()
+obj	index.js	/^var obj = (function(){\r$/;"	v	lineno:1	type:undefined
+init	index.js	/^    var init = function(){\r$/;"	f	lineno:5	type:void function()
+prepareToDraw	index.js	/^    var prepareToDraw = function(evt){\r$/;"	f	lineno:23	type:void function(any)
+finishDrawing	index.js	/^    var finishDrawing = function(){\r$/;"	f	lineno:31	type:void function()
+draw	index.js	/^    var draw = function(evt){\r$/;"	f	lineno:33	type:void function(any)
+draw_circle	index.js	/^    var draw_circle = function(ctx, mousePos){\r$/;"	f	lineno:38	type:void function(any, any)
+setCanvasSize	index.js	/^    var setCanvasSize = function(canvas, size){\r$/;"	f	lineno:44	type:void function(any, Object)
+create_canvas	index.js	/^    var create_canvas = function(id){\r$/;"	f	lineno:48	type:any function(string)
+getMousePos	index.js	/^    var getMousePos = function(evt) {\r$/;"	f	lineno:58	type:Object function(any)
