@@ -15,6 +15,7 @@
     <access origin="*" />
     <!-- added by me -->
     <preference name="permissions"                value="none"/>
+    <gap:platform name="android" />
     <!---->
     
 </widget>
