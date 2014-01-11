@@ -25,7 +25,7 @@ var obj = (function(){
 
 	draw_background(me.cvs_bg_ctx);
 
-	me.cvs_zoom.addEventListener('mousedown',prepareToDraw, false);
+	me.cvs_zoom.addEventListener('touchstart',prepareToDraw, false);
     };
     var draw_background = function(bg_context){
 	bg_context.beginPath();
@@ -45,13 +45,13 @@ var obj = (function(){
 	me.cvs_paper_ctx.beginPath();
 	me.cvs_paper_ctx.moveTo(mousepos.x,mousepos.y);
 	add_magnifier(mousepos);
-	me.cvs_zoom.addEventListener('mousemove', draw, false);
-	me.cvs_zoom.addEventListener('mouseup', finishDrawing, false);
+	me.cvs_zoom.addEventListener('touchmove', draw, false);
+	me.cvs_zoom.addEventListener('touchend', finishDrawing, false);
 	//draw_circle(me.cvs_paper_ctx, mousepos);
     };
     var finishDrawing = function(){
 	me.cvs_zoom_ctx.clearRect(0, 0, CANVAS_SIZE["w"], CANVAS_SIZE["h"]);
-	me.cvs_zoom.removeEventListener('mousemove', draw, false);
+	me.cvs_zoom.removeEventListener('touchmove', draw, false);
     };
     var draw = function(evt){
 	me.cvs_zoom_ctx.clearRect(0, 0, CANVAS_SIZE["w"], CANVAS_SIZE["h"]);
