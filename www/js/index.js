@@ -102,11 +102,14 @@ var obj = (function(){
 
 	return $('#' + cvs_id)[0];
     };
-    var getMousePos = function(evt) {
+    var getMousePos = function(e) {
+	var pos_x =e.changedTouches[0].clientX;
+	var pos_y =e.changedTouches[0].clientY;
+
 	var rect = me.cvs_zoom.getBoundingClientRect();
 	return {
-	    x: evt.clientX - rect.left,
-		y: evt.clientY - rect.top
+	    x: pos_x - rect.left,
+		y: pos_y - rect.top
 	};
     };
     window.onload = init;
